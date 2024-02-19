@@ -106,7 +106,11 @@ header {
   background-attachment: fixed, fixed, fixed, scroll;
   background-image: url(../images/contours.png), url(../images/noise.png),
     url(../images/gridlines.png), url(../images/huntington.jpg);
-  background-position: 0 0, 0 0, -5px -25px, 0 50%;
+  background-position:
+    0 0,
+    0 0,
+    -5px -25px,
+    0 50%;
   background-repeat: repeat, repeat, repeat, no-repeat;
   background-size: auto, auto, auto, cover;
   text-align: center;
@@ -292,6 +296,24 @@ div.benefits p {
 
 /* shared sidebar styling */
 
+.even-background {
+  background-color: #c0d8ca;
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.odd-background {
+  background-color: #e5ede8;
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.zen-resources {
+  text-align: center;
+}
+
 .design-selection ul,
 .zen-resources ul {
   margin: 0;
@@ -360,6 +382,12 @@ li.viewall a {
   font-size: 1.2em;
   font-style: normal;
   text-transform: uppercase;
+}
+.design-name {
+  margin-left: 50px;
+}
+.designer-name {
+  margin-left: 50px;
 }
 
 /* select a design */
@@ -517,7 +545,11 @@ li.viewall a {
   background-attachment: fixed, fixed, fixed, scroll;
   background-image: url(../images/contours.png), url(../images/gridlines.png),
     url(../images/noise.png), url(../images/koi.jpg);
-  background-position: 0 0, -5px -25px, 0 0, 0 50%;
+  background-position:
+    0 0,
+    -5px -25px,
+    0 0,
+    0 50%;
   background-repeat: repeat, repeat, repeat, no-repeat;
   background-size: auto, auto, auto, cover;
   font-size: 2em;
@@ -546,12 +578,22 @@ footer a {
   margin: 0 0.5em;
   position: relative;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-  -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-  transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  -webkit-transition:
+    color 0.25s ease-out,
+    box-shadow 0.25s ease-out;
+  -moz-transition:
+    color 0.25s ease-out,
+    box-shadow 0.25s ease-out;
+  transition:
+    color 0.25s ease-out,
+    box-shadow 0.25s ease-out;
 }
 footer a:hover,
 footer a:focus {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.hovered {
   color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
 }
@@ -1136,13 +1178,21 @@ flexbox is the way forward here, once the syntax settles down a bit.
   header {
     background-image: url(../images/contours2x.png), url(../images/noise.png),
       url(../images/gridlines.png), url(../images/huntington.jpg);
-    background-size: 50% auto, auto, auto, cover;
+    background-size:
+      50% auto,
+      auto,
+      auto,
+      cover;
   }
   .requirements p:last-child {
     background-image: url(../images/contours2x.png),
       url(../images/gridlines.png), url(../images/noise.png),
       url(../images/koi.jpg);
-    background-size: 50% auto, auto, auto, cover;
+    background-size:
+      50% auto,
+      auto,
+      auto,
+      cover;
   }
   /*
       This shouldn't be necessary, but it is. Due to differences in how
@@ -1159,7 +1209,8 @@ flexbox is the way forward here, once the syntax settles down a bit.
 @font-face {
   font-family: "verdemoderna";
   src: url("../fonts/verdemoderna.eot");
-  src: url("../fonts/verdemoderna.eot#iefix") format("embedded-opentype"),
+  src:
+    url("../fonts/verdemoderna.eot#iefix") format("embedded-opentype"),
     url("../fonts/verdemoderna.woff") format("woff"),
     url("../fonts/verdemoderna.ttf") format("truetype"),
     url("../images/verdemoderna.svg#verdemoderna") format("svg");

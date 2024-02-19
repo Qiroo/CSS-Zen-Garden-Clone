@@ -1,12 +1,14 @@
 function Design(props) {
+  const isOdd = props.index % 2 !== 0;
+  const backgroundClass = isOdd ? "" : "even-background";
+
   return (
-    <li>
-      <a href={props.href} class="design-name">
+    <li className={backgroundClass}>
+      <a href={props.href} className="design-name">
         {props.name}
       </a>{" "}
-      by{" "}
-      <a href={props.href2} class="designer-name">
-        {props.author}
+      <a href={props.href2} className="designer-name">
+        by {props.author}
       </a>
     </li>
   );

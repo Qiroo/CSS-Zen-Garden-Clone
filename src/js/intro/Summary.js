@@ -1,6 +1,10 @@
+import TimeDisplay from "../TimeDisplay";
+
 function Summary() {
   return (
     <div class="summary" id="zen-summary" role="article">
+      <TimeDisplay />
+      <br />
       <p>
         A demonstration of what can be accomplished through{" "}
         <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any

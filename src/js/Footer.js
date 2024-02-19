@@ -8,7 +8,7 @@ function Footer() {
           key={index}
           href={icon.href}
           title={icon.title}
-          className={icon.class}
+          className={`${icon.class} ${index % 2 === 0 ? "hovered" : ""}`}
         >
           {icon.title}
         </a>

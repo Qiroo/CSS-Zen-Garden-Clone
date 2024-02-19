@@ -1,5 +1,6 @@
 import Summary from "./intro/Summary";
 import Preamble from "./intro/Preamble";
+import TimeDisplay from "./TimeDisplay";
 
 function Intro() {
   return (
